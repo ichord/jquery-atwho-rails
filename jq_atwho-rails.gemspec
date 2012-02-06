@@ -3,8 +3,8 @@ $:.push File.expand_path("../lib", __FILE__)
 require "jq_atwho-rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "atwho-rails"
-  s.version     = Atwho::Rails::VERSION
+  s.name        = "jq_atwho-rails"
+  s.version     = JqAtwho::Rails::VERSION
   s.authors     = ["ichord"]
   s.email       = ["chord.luo@gmail.com"]
   s.homepage    = ""
