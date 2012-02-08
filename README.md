@@ -1,3 +1,7 @@
+### Testing
+just issue  
+`bundle` and `rspec`
+
 ### Rails < 3.1
 #### Install
 issue commnd line bellow:  
