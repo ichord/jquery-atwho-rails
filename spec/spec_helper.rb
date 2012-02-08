@@ -8,7 +8,6 @@ end
 # Set up generator tests
 require 'rails/all'
 require 'rails/generators'
-require 'rails/generators/test_case'
 
 class TestApp < Rails::Application
   config.root = File.dirname(__FILE__)
