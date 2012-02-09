@@ -1,5 +1,4 @@
-#source "http://rubygems.org"
-source "http://ruby.taobao.org"
+source "http://rubygems.org"
 
-# Specify your gem's dependencies in jq_atwho-rails.gemspec
+# Specify your gem's dependencies in jquery-atwho-rails.gemspec
 gemspec

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe JqAtwho::Generators::InstallGenerator do
+describe Jquery::Atwho::Generators::InstallGenerator do
   include GeneratorSpec::TestCase
   
   destination File.expand_path("../../../tmp/", __FILE__)
