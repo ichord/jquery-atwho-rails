@@ -20,9 +20,12 @@ then It will show in `public/assets/[javascript|stylesheets]/` directory.
 #### Rails >= 3.1
 add this gem in `Gemfile` like this:  
 `gem jq_atwho-rails`  
-then add this line in `app/assets/javascripts/application.js`  
-add `app/assets/stylesheets/applications.css`  
-` //= require jquery.atwho `
+
+then add    
+` //= require jquery.atwho `  
+to `app/assets/javascripts/application.js`  
+and `app/assets/stylesheets/applications.css`  
+
 
 
 ### Test generator
