@@ -12,23 +12,22 @@ more details in [At.js](https://github.com/ichord/At.js) on github.
 
 ### Installtion
 ---
-#### Rails < 3.1
+#### Rails 3.0.x
 issue commnd line bellow:  
-`rails generate jq_atwho:install`  
-then It will show in `public/assets/[javascript|stylesheets]/` directory.
+`rails generate atwho:install`  
+then It will show in `public/[javascript|stylesheets]/` directory.
 
-#### Rails >= 3.1
+#### Rails 3.1.x
 add this gem in `Gemfile` like this:  
-`gem jq_atwho-rails`  
+`gem jquery-atwho-rails`  
 
 then add    
 ` //= require jquery.atwho `  
 to `app/assets/javascripts/application.js`  
 and `app/assets/stylesheets/applications.css`  
 
-
-
-### Test generator
+### development
 ---
+#### Test generator
 just issue  
 `bundle` then `rspec`

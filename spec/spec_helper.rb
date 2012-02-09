@@ -14,11 +14,10 @@ module Rails
   end
 end
 Rails.application.config.root = Rails.root
-#Rails.application.config.assets.enabled = true
 # Call configure to load the settings from
 # Rails.application.config.generators to Rails::Generators
 #Rails::Generators.configure!
 
-#require 'jquery-atwho-rails'
-require 'generators/jquery-atwho/install_generator'
+#Rails.application.config.assets.enabled = true
+require 'generators/atwho/install_generator'
 require 'generator_spec/test_case'

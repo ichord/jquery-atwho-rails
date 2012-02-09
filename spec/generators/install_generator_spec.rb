@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Jquery::Atwho::Generators::InstallGenerator do
+describe Atwho::Generators::InstallGenerator do
   include GeneratorSpec::TestCase
   
   destination File.expand_path("../../../tmp/", __FILE__)
@@ -10,8 +10,8 @@ describe Jquery::Atwho::Generators::InstallGenerator do
   end
 
   it "generate assets files" do
-    js_prefix = "public/assets/javascripts"
-    css_prefix = "public/assets/stylesheets"
+    js_prefix = "public/javascripts"
+    css_prefix = "public/stylesheets"
 
     assert_file "#{js_prefix}/jquery.atwho.js"
     #assert_file "#{js_prefix}/jquery.atwho.min.js"
