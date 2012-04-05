@@ -4,7 +4,7 @@ bind your textarea
 
 ```javascript
 data = ['tom','john'];
-$('textarea').atwho("@",{'data':data});
+$('textarea').atWho("@",{'data':data});
 ```
 
 that's it, check it out!
