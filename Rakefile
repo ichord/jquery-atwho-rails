@@ -15,7 +15,7 @@ task :sync do
 end
 
 desc "complie and compress"
-task :compile => :sync do
+task :fresh => :sync do
   at_dir = "tmp/At.js"
   the_js = "lib/assets/javascripts/jquery.atwho.js"
   sh "coffee -j tmp/atwho.js -c #{at_dir}/coffee"
