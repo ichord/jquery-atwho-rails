@@ -1,4 +1,5 @@
 require "jquery-atwho-rails/version"
+require "ActiveSupport"
 
 module Jquery
   module Atwho

@@ -1,3 +1,8 @@
+### Notice
+updated to `v0.2.0`.  
+The stable and old one would live in branch `stable-v0.1.x` branch taged `v0.1.7`  
+More details in [At.js](https://github.com/ichord/At.js) project.
+
 ### Usage
 ---
 bind your textarea
@@ -8,7 +13,7 @@ $('textarea').atWho("@",{'data':data});
 ```
 
 that's it, check it out!
-more details in [At.js](https://github.com/ichord/At.js) on github.
+more details in [At.js Home Page](http://ichord.github.com/At.js/)
 
 ### Installtion
 ---

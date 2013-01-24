@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.email       = ["chord.luo@gmail.com"]
   s.homepage    = "http://ichord.github.com/jquery-atwho-rails"
   s.summary     = %q{jquery plugin: @mentions}
-  s.description = %q{This is a jQuery plugin 
-    that implement Twitter/Weibo like @ mentions.}
+  s.description = %q{This is a jQuery plugin
+    that implement Github-like mentions.}
 
   s.rubyforge_project = "jquery-atwho-rails"
 

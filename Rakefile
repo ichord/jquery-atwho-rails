@@ -1,27 +1,23 @@
 require "bundler/gem_tasks"
-#require "uglifier"
 
 desc "sync from At.js"
 task :sync do
+  puts " * syncing..."
   at_dir = "tmp/At.js"
-  FileUtils.mkdir_p("tmp") if not Dir.exist? "tmp"
-  if not Dir.exist? at_dir
+  FileUtils.mkdir_p("tmp") unless Dir.exist? "tmp"
+  unless Dir.exist? at_dir
     system "git clone git://github.com/ichord/At.js.git #{at_dir}"
   else
-    Dir.chdir(at_dir) do
-      puts %x{git pull}
-    end
+    Dir.chdir(at_dir) { puts %x{git pull -X theirs} }
   end
 end
 
-desc "complie and compress"
+desc "copy assets"
 task :fresh => :sync do
-  at_dir = "tmp/At.js"
-  the_js = "lib/assets/javascripts/jquery.atwho.js"
-  sh "coffee -j tmp/atwho.js -c #{at_dir}/coffee"
-  #File.open("atwho.js","w") { |f|
-  #  f.write Uglifier.complie(File.read(the_js))
-  #}
-  FileUtils.copy_file "tmp/atwho.js", the_js
-  FileUtils.copy_file "#{at_dir}/css/jquery.atwho.css", "lib/assets/stylesheets/jquery.atwho.css"
+  puts "", " * Copying..."
+  source_dir = "tmp/At.js/dist"
+  dist_dir = "lib/assets"
+  FileUtils.copy "#{source_dir}/js/jquery.atwho.js", "#{dist_dir}/javascripts/"
+  FileUtils.copy "#{source_dir}/css/jquery.atwho.css", "#{dist_dir}/stylesheets/"
+  puts `ls -R #{dist_dir}`
 end
