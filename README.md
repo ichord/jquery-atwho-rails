@@ -1,7 +1,7 @@
 ### Notice
 updated to `v0.2.0`.  
 The stable and old one would live in branch `stable-v0.1.x` branch taged `v0.1.7`  
-More details in [At.js](https://github.com/ichord/At.js) project.
+**More details** in [At.js](https://github.com/ichord/At.js) project.
 
 ### Usage
 ---
@@ -9,7 +9,7 @@ bind your textarea
 
 ```javascript
 data = ['tom','john'];
-$('textarea').atWho("@",{'data':data});
+$('textarea').atwho("@",{'data':data});
 ```
 
 that's it, check it out!
