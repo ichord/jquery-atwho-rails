@@ -1,4 +1,9 @@
 
+The following date is in changelog file of At.js
+https://github.com/ichord/At.js/blob/master/CHANGELOG.md
+
+* sync at 2013-04-23 - At.js(c3845e5)
+
 #### 2013.4.15 - v0.2.4
 
 * `data` setting will be used to load data either local or remote. If it's String as URL it will preload data from remote by launch a ajax request (every times At.js call `reg` to update settings)
