@@ -15,7 +15,7 @@ $('textarea').atwho("@",{'data':data});
 that's it, check it out!
 more details in [At.js Home Page](http://ichord.github.com/At.js/)
 
-### Installtion
+### Installation
 ---
 #### Rails 3.0.x
 issue commnd line bellow:  
