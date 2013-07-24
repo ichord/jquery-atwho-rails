@@ -1,6 +1,6 @@
 ### Usage
 ---
-bind your textarea
+Bind your textarea
 
 ```javascript
 data = ['tom','john'];
@@ -13,12 +13,12 @@ more details in [At.js Home Page](http://ichord.github.com/At.js/)
 ### Installation
 ---
 #### Rails 3.0.x
-issue commnd line bellow:  
+Issue command line bellow:  
 `rails generate atwho:install`  
 then It will show in `public/[javascript|stylesheets]/` directory.
 
 #### Rails 3.1.x
-add this gem in `Gemfile` like this:  
+Add this gem in `Gemfile` like this:  
 `gem jquery-atwho-rails`  
 
 then add    
@@ -29,8 +29,8 @@ and `app/assets/stylesheets/applications.css`
 #### History Versions 
 All in [At.js](https://github.com/ichord/At.js) project.
 
-### development
+### Development
 ---
 #### Test generator
-just issue  
+Just issue  
 `bundle` then `rspec`
