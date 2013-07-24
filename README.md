@@ -1,15 +1,10 @@
-### Notice
-updated to `v0.2.0`.  
-The stable and old one would live in branch `stable-v0.1.x` branch taged `v0.1.7`  
-**More details** in [At.js](https://github.com/ichord/At.js) project.
-
 ### Usage
 ---
 bind your textarea
 
 ```javascript
 data = ['tom','john'];
-$('textarea').atwho("@",{'data':data});
+$('textarea').atwho({at:"@", 'data':data});
 ```
 
 that's it, check it out!
@@ -30,6 +25,9 @@ then add
 ` //= require jquery.atwho `  
 to `app/assets/javascripts/application.js`  
 and `app/assets/stylesheets/applications.css`  
+
+#### History Versions 
+All in [At.js](https://github.com/ichord/At.js) project.
 
 ### development
 ---
