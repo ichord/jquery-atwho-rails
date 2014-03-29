@@ -22,9 +22,8 @@ Add this gem in `Gemfile` like this:
 `gem jquery-atwho-rails`  
 
 then add    
-` //= require jquery.atwho `  
-to `app/assets/javascripts/application.js`  
-and `app/assets/stylesheets/applications.css`  
+` //= require jquery.atwho/index `  to `app/assets/javascripts/application.js` 
+and add ` //=require jquery.atwho ` to `app/assets/stylesheets/applications.css`  
 
 #### History Versions 
 All in [At.js](https://github.com/ichord/At.js) project.
