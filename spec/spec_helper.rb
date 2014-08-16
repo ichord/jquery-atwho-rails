@@ -19,5 +19,5 @@ Rails.application.config.root = Rails.root
 #Rails::Generators.configure!
 
 #Rails.application.config.assets.enabled = true
+require "generator_spec"
 require 'generators/atwho/install_generator'
-require 'generator_spec/test_case'

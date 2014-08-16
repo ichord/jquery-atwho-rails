@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'bundler/setup'
 require "bundler/gem_tasks"
 
 at_dir = "tmp/At.js"
