@@ -12,7 +12,8 @@ if ::Rails.version < "3.1" || !::Rails.application.config.assets.enabled
 
         def copy_js
           say_status("copying js", " jquery.atwho.js (#{Jquery::Atwho::Rails::VERSION})", :green)
-          copy_file "javascripts/jquery.atwho.js", "public/javascripts/jquery.atwho.js"
+          copy_file "javascripts/jquery.atwho/jquery.caret.js", "public/javascripts/jquery.atwho/jquery.caret.js"
+          copy_file "javascripts/jquery.atwho/jquery.atwho.js", "public/javascripts/jquery.atwho/jquery.atwho.js"
           #copy_file "javascripts/jquery.atwho.min.js", "public/javascripts/jquery.atwho.min.js"
         end
 
