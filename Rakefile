@@ -14,18 +14,15 @@ task :sync do
   else
     Dir.chdir(at_dir) { puts %x{git pull -X theirs} }
   end
-end
-
-desc "load dependences"
-task :bower_install => :sync do
-  unless Dir.exist? bower_dir
-    Dir.chdir(at_dir) { puts %x{bower install} }
-  end
+  Dir.chdir(at_dir) {
+    puts "* bower install..."
+    puts %x{bower install}
+  }
 end
 
 desc "copy assets"
-task :fresh => [:bower_install, :sync] do
-  puts "", " * Copying..."
+task fresh: :sync do
+  puts " * Copying..."
   source_dir = "tmp/At.js/dist"
   dist_dir = "lib/assets"
 
