@@ -27,7 +27,7 @@ task fresh: :sync do
   dist_dir = "lib/assets"
 
   js_dist_dir = "#{dist_dir}/javascripts/jquery.atwho/"
-  FileUtils.copy "#{bower_dir}/Caret.js/src/jquery.caret.js", js_dist_dir
+  FileUtils.copy "#{bower_dir}/Caret.js/dist/jquery.caret.js", js_dist_dir
   FileUtils.copy "#{source_dir}/js/jquery.atwho.js", js_dist_dir
 
   FileUtils.copy "#{source_dir}/css/jquery.atwho.css", "#{dist_dir}/stylesheets/"
