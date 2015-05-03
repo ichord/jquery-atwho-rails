@@ -5,3 +5,4 @@ pkg/*
 *.swp
 tmp/*
 build/*
+bower_components/
