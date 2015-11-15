@@ -20,12 +20,24 @@ Issue command line bellow:
 then It will show in `public/[javascript|stylesheets]/` directory.
 
 #### Rails >= 3.1.x
-Add this gem in `Gemfile` like this:  
-`gem jquery-atwho-rails`  
+Add this gem in `Gemfile` like this:
 
-then add    
-` //= require jquery.atwho `  to `app/assets/javascripts/application.js` 
-and add ` //=require jquery.atwho ` to `app/assets/stylesheets/applications.css`  
+```ruby
+gem 'jquery-atwho-rails'
+```
+
+add in `app/assets/javascripts/application.js`:
+
+```
+//= require jquery
+//= require jquery.atwho
+```
+
+and in `app/assets/stylesheets/applications.css`:
+
+``` 
+//=require jquery.atwho
+```
 
 #### History Versions 
 All in [At.js](https://github.com/ichord/At.js) project.
