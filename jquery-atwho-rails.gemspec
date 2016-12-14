@@ -5,6 +5,7 @@ require "jquery-atwho-rails/version"
 Gem::Specification.new do |s|
   s.name        = "jquery-atwho-rails"
   s.version     = Jquery::Atwho::Rails::VERSION
+  s.license     = ['MIT']
   s.authors     = ["ichord"]
   s.email       = ["chord.luo@gmail.com"]
   s.homepage    = "http://ichord.github.com/jquery-atwho-rails"
