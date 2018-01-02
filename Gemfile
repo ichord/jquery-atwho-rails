@@ -1,8 +1,4 @@
-if ENV['TRAVIS']
-  source 'https://rubygems.org'
-else
-  source 'http://ruby.taobao.org'
-end
+source 'https://rubygems.org'
 
 # Specify your gem's dependencies in jquery-atwho-rails.gemspec
 gemspec
